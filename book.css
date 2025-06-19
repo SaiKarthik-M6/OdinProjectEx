@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+}
+
+.book {
+  border: 1px solid rgb(155, 41, 41);
+  padding: 10px;
+  margin: 10px 0;
+}

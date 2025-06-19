@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <link rel="stylesheet" href="book.css"> <!-- connects to CSS -->
+</head>
+<body>
+  <h1>My Library</h1>
+
+  <!-- Button to open the form -->
+  <button onclick="showForm()">New Book</button>
+
+  <!-- Form to add a book -->
+  <form id="book-form" onsubmit="submitForm(event)" style="display: none;">
+    <input id="title" placeholder="Title" required>
+    <input id="author" placeholder="Author" required>
+    <input id="pages" placeholder="Pages" type="number" required>
+    <label>
+      Read: <input type="checkbox" id="read">
+    </label>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Area where books will be shown -->
+  <div id="library"></div>
+
+  <!-- Link to your JS file -->
+  <script src="book.js"></script>
+</body>
+</html>
